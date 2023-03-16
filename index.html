@@ -1,23 +1,47 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="ru">
     <head>
-        <style>
-            table{
-                border-width: 10px;
-                border-color: bisque;
-                border-style: ridge;
-                border-spacing:5px;
-                margin: 5px;
-            }
-            div{
-                display: flex;
-                justify-items:center;
-                align-items: center;
-            }
-        </style>
+        <title>Анкета</title>
+        <link rel="stylesheet" href="main.css">
+        <script type='text/javascript' src="script.js"></script>
+        <meta charset="utf-8" />
     </head>
-<BODY>
-<H2>Практическое занятие 3. Пример 3.2</H2>
-<p>Результат работы скрипта:</p>
-<div><script type='text/javascript' src='script.js'> </script></div>
-</BODY>
-</HTML>
+    <body>
+        <h1>Анкета</h1>
+        <div id="hr_main"> </div>
+        <form>
+          <div class="div_main">
+            <span>Фамилия:</span>
+            <input type="text" placeholder="Введите Вашу фамилию"  name="firstName" id="firstName" size="30" class="input_main">
+          </div>
+          <div class="div_main">
+            <span>Имя:</span>
+            <input type="text" placeholder="Введите Ваше имя"  name="t" id="lastName" size="30" class="input_main">
+          </div>
+          <div class="div_main">
+            <span>Отчество:</span>
+            <input type="text" placeholder="Введите Ваше отчество"  name="t" id="surname" size="30" class="input_main">
+          </div>
+          <div class="div_main">
+            <span>Год рождения:</span>
+            <input type="text" placeholder="Введите Ваш год рождения"  name="t" id="year" size="30" class="input_main">
+          </div>
+          <div class="div_main">
+            <span>Место рождения:</span>
+            <input type="text" placeholder="Введите Ваше место рождения"  name="t" id="place" size="30" class="input_main">
+          </div>
+          <div class="div_main">
+            <span>Любимое занятие:</span>
+            <input type="text" placeholder="Введите Ваше любимое занятие"  name="t" id="favoriteHobby" size="30" class="input_main">
+          </div>
+          <div class="div_main">
+            <span>Нелюбимое занятие:</span>
+            <input type="text" placeholder="Введите Ваше нелюбимое занятие"  name="t" id="unloveHobby" size="30" class="input_main">
+          </div>
+          <br>
+          <input type="button" value="Сформировать биографию" OnClick="hello()" class="input_button">
+        </form>
+        <div id="hr_main"> </div>
+    </body>
+</html>
+    

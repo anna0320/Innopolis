@@ -1,35 +1,44 @@
-var n=10;
-var s;
-document.write("<table>");
-let st=9;
-for(let i=1; i <= n; i=i+1)
+function hello()
 {
-    document.write("<tr>");
-    for(let j=1; j<=n; j=j+1)
-    {
-        if(st<=j) {s="bgcolor=#4ca30a"; }
-        else {s="bgcolor=#ff4d00";}
+    var f=document.getElementById('firstName');
+    r=f.value;
 
-        document.write("<td width=30 height=30 " + s +"> </td>");
-    }
-    document.write("</tr>");
-    st=st-1;
+    var l=document.getElementById('lastName');
+    r1=l.value;
+
+    var s=document.getElementById('surname');
+    r2=s.value;
+
+    var yy=document.getElementById('year');
+    y=yy.value;
+
+    var m=document.getElementById('place');
+    p=m.value;
+
+    var lh = document.getElementById('favoriteHobby');
+    fh =lh.value;
+
+    var uh = document.getElementById('unloveHobby');
+    unlh = uh.value;
+    var win=window.open("","","width=400,height=500");
+    // открываем запись в это окно - объект win
+    win.document.open();
+    // формирование строки str
+    36
+    // содержимое в заголовок передается из поля формы, переменная r 
+    var str = "<h1>Биография пользователя:</h1><hr>";
+    // вывод строки в документ окна win
+    win.document.write(str);
+    str = "<span>Меня зовут "+r+" "+r1+" "+r2+". Я родился в "+y+" году, в прекрасном месте - "+p+".</span><br>";
+    win.document.write(str);
+    str = "<span>Больше всего на свете я люблю "+fh+". Считаю, что этому можно посвятить всю жизнь! А вот чему, по моему мнению, уделять внимание совсем не стоит - так это "+unlh+"...</span><br>";
+    win.document.write(str);
+    str = "<span>Если бы единственное занятие было "+unlh+ ", а "+fh+ " было невозможно, меня бы давно не существовало.</span><br>"
+    win.document.write(str);
+    // формирование и вывод кнопки закрытия
+    str ='<input type="button" value="закрыть"'
+    +'onClick="window.close();">';
+    win.document.write(str);
+    // закрываем вывод в документ объекта win
+    win.document.close();
 }
-document.write("</table>");
-
-document.write("<table>");
-let sd = 0;
-for(let i=1; i <= n; i=i+1)
-{
-    document.write("<tr>");
-    for(let j=1; j<=n; j=j+1)
-    {
-        if((i+j)%4==0) {s="bgcolor=pink";}
-        else {s="bgcolor=black";}
-
-        document.write("<td width=30 height=30 " + s +"> </td>");
-    }
-    document.write("</tr>");
-    sd=sd+1;
-}
-document.write("</table>");
