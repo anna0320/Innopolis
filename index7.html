@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script7.js"></script>
+    <link rel="stylesheet" href="main7.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <form class="main_form">
+        <div class="all_form">
+            <h1>Простой калькулятор</h1>
+                <div class="form_div">
+                    <p>Введите первое число:</p>
+                <input type="text" id="firstnumber" placeholder="Первое число" class="form_input_text">
+                </div>
+                <div class="form_div">
+                    <p>Введите второе число:</p>
+                <input type="text" id="secondnumber" placeholder="Второе число" class="form_input_text">
+                </div>
+                <div class="form_div">
+                    <p>Выберите операцию:</p>
+
+                    <input type="radio" id="operation1" name="rb">
+                    <label for="operation1">+</label><br>
+
+                    <input type="radio" id="operation2" name="rb">
+                    <label for="operation2">-</label><br>
+
+                    <input type="radio" id="operation3" name="rb">
+                    <label for="operation3">*</label><br>
+
+                </div>
+                    <input type="button" value="Вычислить" id="result" class="btn" onclick="calculator()">
+                    <input type="reset" value="Очистить" id="clear" class="btn">
+            
+                <hr>
+                <p id="p_result">Результат:</p>
+                <input type="text" id="input_result" placeholder="Результат вычислений">
+            <div id="kitty_svg">
+                <?xml version="1.0" standalone="no"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+                "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    width="100.px" height="100px" viewBox="0 0 200 200"
+    preserveAspectRatio="xMidYMid meet">
+
+    <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+    fill="#000000" stroke="none">
+    <path d="M288 914 c-11 -11 -10 -79 4 -154 6 -36 10 -87 9 -115 -1 -36 5 -64
+    24 -100 13 -27 25 -54 25 -60 0 -5 -23 -76 -52 -157 l-52 -148 -53 0 c-82 0
+    -120 -53 -73 -100 20 -20 31 -20 338 -18 355 3 352 3 293 71 -27 30 -31 43
+    -31 89 0 30 9 88 20 129 11 41 20 91 20 111 0 20 5 40 11 44 23 14 50 94 48
+    142 -1 26 4 79 10 119 7 39 11 89 9 110 -3 33 -7 38 -29 41 -15 2 -53 -6 -85
+    -18 -81 -30 -241 -34 -301 -8 -48 21 -125 33 -135 22z m91 -50 l52 -15 -48
+    -44 -48 -43 -7 37 c-7 39 -10 81 -5 81 2 0 27 -7 56 -16z m420 -16 c-1 -18 -4
+    -46 -8 -61 l-6 -28 -44 45 -44 45 24 9 c23 9 55 18 72 21 4 0 6 -14 6 -31z
+    m-126 -41 c91 -54 131 -172 85 -252 -30 -51 -105 -102 -164 -111 -121 -18
+    -254 81 -254 189 0 77 75 171 156 197 50 16 127 6 177 -23z m-113 -402 c47 0
+    77 6 109 22 25 12 47 21 49 18 2 -2 -6 -41 -17 -86 -28 -110 -28 -202 -1 -229
+    27 -27 26 -30 -20 -30 -33 0 -46 6 -70 33 -27 30 -29 38 -30 110 0 69 -2 78
+    -17 75 -15 -3 -18 -16 -21 -83 -2 -67 0 -83 18 -107 l21 -28 -74 0 c-71 0 -74
+    1 -87 27 -7 16 -12 47 -11 71 3 45 -18 82 -46 82 -16 0 -18 -36 -2 -46 7 -4 9
+    -23 6 -49 -4 -29 -2 -48 9 -64 l16 -22 -124 3 c-101 3 -123 6 -123 18 0 11 16
+    16 65 20 l65 5 50 140 c28 77 53 148 57 157 7 16 12 15 60 -10 41 -21 66 -27
+    118 -27z"/>
+    <path d="M426 684 c-9 -8 -16 -24 -16 -34 0 -10 7 -26 16 -34 30 -31 84 -9 84
+    35 0 17 -3 17 -20 7 -25 -16 -38 -3 -22 22 10 17 10 20 -7 20 -11 0 -27 -7
+    -35 -16z"/>
+    <path d="M626 684 c-30 -30 -9 -84 33 -84 22 0 51 31 51 53 0 15 -3 15 -20 5
+    -10 -7 -22 -9 -27 -5 -4 5 -2 17 5 27 10 17 10 20 -7 20 -11 0 -27 -7 -35 -16z"/>
+    <path d="M520 592 c0 -5 9 -17 19 -26 16 -15 22 -15 40 -4 34 21 26 38 -19 38
+    -22 0 -40 -4 -40 -8z"/>
+    </g>
+                </svg></div>
+        </div>
+    </form>
+</body>
+</html>
